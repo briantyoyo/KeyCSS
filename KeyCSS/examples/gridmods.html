@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KeyCSS - Grid Modifications</title>
+	<link rel="stylesheet" type="text/css" href="../source/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Raleway' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../source/keyii.css">
+	<link rel="stylesheet" type="text/css" href="../source/keydebug.css">
+</head>
+<body>
+<div class="contain">
+
+	<div class="row fill column">
+		<h2> Grid Modifiers </h2>
+	</div>
+
+	<section class="row nogutter">
+		<div class="column span4">
+			<p>No Gutter</p>
+		</div>
+		<div class="column span4">
+			<p>Between</p>
+		</div>
+		<div class="column span4">
+			<p>Columns</p>
+		</div>
+	</section>
+
+	<section class="row hfill">
+		<div class="column span4">
+			<p>.hfill - Fills Columns Horizontally</p>
+		</div>
+		<div class="column span4">
+			<p>&nbsp;</p>
+		</div>
+		<div class="column span4">
+			<p>&nbsp;</p>
+		</div>
+	</section>
+
+	<section class="row">
+		<div class="column">
+			<p>.hfill doesn't affect the next .row</p>
+		</div>
+	</section>
+
+	<section class="row vfill">
+		<div class="column span4">
+			<p>&nbsp;</p>
+		</div>
+		<div class="column span4">
+			<p>.vfill - Fills Columns Vertically</p>
+		</div>
+		<div class="column span4">
+			<p>&nbsp;</p>
+		</div>
+	</section>
+
+	<section class="row">
+		<div class="column">
+			<p>.vfill affects next .row too!</p>
+		</div>
+	</section>
+
+	<section class="row">
+		<div class="column">
+			<p>.fill affects previous .row!</p>
+		</div>
+	</section>
+
+	<section class="row fill">
+		<div class="column span4">
+			<p>&nbsp;</p>
+		</div>
+		<div class="column span4">
+			<p>.fill - Fills Columns Vertically</p>
+		</div>
+		<div class="column span4">
+			<p>And gutters</p>
+		</div>
+	</section>
+
+	<section class="row touchfill">
+		<div class="column">
+			<p>.fill affects next .row too!</p>
+		</div>
+	</section>
+
+</div>
+</body>
+</html>

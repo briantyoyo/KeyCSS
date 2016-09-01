@@ -1,0 +1,88 @@
+html
+{
+	font-family: Raleway;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	color:#262626;
+}
+
+body
+{
+	background:#E5E2D5;
+}
+
+.contain
+{
+	background:#FFFCED;
+	/*padding: 10px 0 0 0;*/
+	max-width:1200px;
+}
+
+h1 
+{
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed";
+	font-size: 2.75em; /* 50px = 2.5em */
+	font-weight: 300;
+	color:#5B988E;
+}
+
+h2 
+{
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed";
+	font-size: 1.75em;
+	font-weight: 700;
+	color:#BFBDB1;
+}
+
+h3 
+{
+	font-family: "Open Sans Condensed";
+	font-size: 1.25em;
+	font-weight: 700;
+	color:#363F3E;
+}
+
+h4
+{
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed";
+	font-size: 1.25em;
+	font-weight: 300;
+	color:#262626;
+}
+
+h5 
+{
+	font-family: "Open Sans Condensed";
+	font-size: 1em;
+	font-weight: 700;
+	color:#BFBDB1;
+}
+
+.small
+{
+	color:#000;
+}
+
+.column {
+	min-height: 5px;
+	background-color: #E5E2D5;
+}
+
+.hero > .column {
+	background-color: #BFBDB1;
+}
+
+nav ul {
+	text-align: right;
+	margin:0;
+	padding-left: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 0 1%;
+}

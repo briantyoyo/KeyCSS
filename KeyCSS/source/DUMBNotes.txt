@@ -1,0 +1,33 @@
+= To do =
+
+Global Services
+- Effects 				// Manages IPlayableAsset
+	- Audio
+	- Particle
+	- Tween
+- Input					// Checks an IInput and does an Action
+
+Non-Global Services
+- Level 				// Tracks current level data
+	- Checkpoint 		// Triggers and restores states from ISnapshotible
+	- 
+- Metrics 				// IntMetrics Dictionary<String, int>, StringMetrics, Vector3Metrics
+	- PlayerMetric		// Tracks player actions (Deaths, Jump, Playtime, etc)
+	- LevelScoreMetric	// Tracks player actions per level (high scores)
+	- Achievements		// Tracks player accomplishments
+- Analytics				// Sends player status for development purposes
+- Serialization			// Saves player data for reload later
+
+Interfaces
+- IDamageable
+- IPlayableAsset 		// Can be played, stopped, paused
+- IItem 				// Can be in an Inventory
+- IEquipable 			// Can be in an Inventory, and be used
+- ISnapshotible 		// Can save its state for reload later
+- IInput				// Input definition
+
+Game Play
+- Sandbox
+	- Damage Types { fire, ice, acid, electric, impact, normal }
+	- Equipment
+	- Inventory

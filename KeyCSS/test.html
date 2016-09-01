@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+.lightbox-link:focus {
+  color: white;
+}
+
+.lightbox {
+  display:block;
+  height:0;
+  width:0;
+  background:grey;
+  transition:height .5s ease-in-out .1s, width .5s ease-in-out .1s;
+  z-index:99;
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+.lightbox .lb-box {
+  position:relative;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lightbox-link:focus + .lightbox {
+  display:block;
+  height:300px;
+  width:500px;
+}
+
+.lightbox::after {
+  content: '';
+  height:100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:-100;
+  transition: background-color .3s ease-in-out .1s;
+  background: rgba(0, 0, 0, 0);
+}
+
+.lightbox-link:focus + .lightbox::after {
+  
+  background: rgba(0, 0, 0, .9);
+}
+</style>
+</head>
+<body>
+<a href="javascript:void(0)" class="lightbox-link"> OPEN </a>
+
+<div class="lightbox">
+  <img src="http://placehold.it/350x250">
+  <a href="http://google.com/">Google</a>
+</div>
+</body>
+</html

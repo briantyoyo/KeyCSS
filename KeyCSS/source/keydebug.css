@@ -1,0 +1,29 @@
+body {
+	background-color: #353535;
+	color:#f5f5f5;
+	font-size: 11px;
+}
+.contain {
+	background-color: #404040;
+	padding: 10px 0;
+	max-width:1140px;
+}
+
+.column > * {
+	text-align: center;
+	background-color: #5f5f5f;
+	font-weight: bold;
+	outline: 1px solid black;
+}
+
+.column > *:not(.row) {
+	padding: 20px;
+}
+
+.column > .row {
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+.column:nth-child(even) > * { background-color: #4f4f4f; }
+.row { background-color: #6f6f6f; }

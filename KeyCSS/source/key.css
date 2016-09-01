@@ -1,0 +1,117 @@
+html { font-size: 16px; }
+.contain { margin:0 auto; }
+
+.row {
+	width: 97%;
+	margin: 0 1.5%;
+	/*margin: 0 1rem;*/
+	padding: 0;
+	text-align: center;
+	overflow: hidden;
+	clear:both;
+}
+
+.row > * { text-align: left; }
+.row:first-child { margin-top: 0; }
+
+.box {
+	display: block;
+	float: left;
+	margin: .5% 0;
+	/*margin:.5rem 0;*/
+	width: 100%;
+}
+
+@media (min-width: 480px) {
+	html {
+		font-size: 12px;
+	}
+
+	.row { margin: .25% 1.5%; }
+	.box + .box { margin-left: 1.6%; }
+	
+	.row.bleed,
+	.row.bleed .box { 
+		margin-top:0;
+		margin-bottom: 0;
+	}
+	.row.bleed + .row, 
+	.row.bleed + .row > .box { 
+		margin-top: 0;
+	}
+
+	/* Box Span Widths */
+
+	.box.span1_2 { width: 49.2%; }
+
+	.box.span1_3 { width: 32.26%; }
+	.box.span2_3 { width: 66.13%; }
+
+	.box.span1_4 { width: 23.8%; }
+	.box.span2_4 { width: 49.2%; }
+	.box.span3_4 { width: 74.6%; }
+
+	.box.span1_5 { width: 18.72%; }
+	.box.span2_5 { width: 39.04%; }
+	.box.span3_5 { width: 59.36%; }
+	.box.span4_5 { width: 79.68%; }
+
+	.box.span1_6 { width: 15.33%; }
+	.box.span2_6 { width: 32.26%; }
+	.box.span3_6 { width: 49.2%; }
+	.box.span4_6 { width: 66.13%; }
+	.box.span5_6 { width: 83.06%; }
+
+	.box.span1_7 { width: 12.91%; }
+	.box.span2_7 { width: 27.42%; }
+	.box.span3_7 { width: 41.94%; }
+	.box.span4_7 { width: 56.45%; }
+	.box.span5_7 { width: 70.97%; }
+	.box.span6_7 { width: 85.48%; }
+
+	.box.span1_8 { width: 11.1%; }
+	.box.span2_8 { width: 23.8%; }
+	.box.span3_8 { width: 36.5%; }
+	.box.span4_8 { width: 49.2%; }
+	.box.span5_8 { width: 61.9%; }
+	.box.span6_8 { width: 74.6%; }
+	.box.span7_8 { width: 87.3%; }
+
+	.box.span1_9 { width: 11.1%; }
+	.box.span2_9 { width: 23.8%; }
+	.box.span3_9 { width: 36.5%; }
+	.box.span4_9 { width: 49.2%; }
+	.box.span5_9 { width: 61.9%; }
+	.box.span6_9 { width: 74.6%; }
+	.box.span7_9 { width: 87.3%; }
+	.box.span7_9 { width: 87.3%; }
+
+	/* Row & Box Modificationns */
+	.row > .row { 
+		width: 100%;
+		padding: 0;
+		padding-top: .5%;
+		margin: 0;
+	}
+
+	.row > .row .box { 
+		margin-top: .25%; 
+		margin-bottom: .25%;
+	}
+
+	.row.fill {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.row.fill .box:first-child > *:first-child { padding-left: 1.5%; }
+	.row.fill .box:last-child > *:last-child { padding-right: 1.5%; }
+
+	.box:only-child {
+		display: inline-block;
+		float: none;
+		margin-left: auto;	
+		margin-right: auto;
+	}
+} 
